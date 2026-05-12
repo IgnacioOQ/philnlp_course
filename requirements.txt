@@ -1,0 +1,18 @@
+# Python dependencies for the Philosophy of NLP course (LMU MCMP).
+# Install everything with:    pip install -r requirements.txt
+# Pins are lower-bound only — newer versions should be fine.
+
+# --- Core scientific Python (used in every unit) -----------------------------
+numpy>=2.0
+matplotlib>=3.9
+
+# --- Unit 1: n-grams (01_ngrams/01_ngrams_tutorial.py) -----------------------
+nltk>=3.9
+
+# --- Unit 4: transformers (04_transformers/*.ipynb) --------------------------
+torch>=2.4
+
+# --- Jupyter (needed to run .ipynb units) ------------------------------------
+notebook>=7.0
+jupyterlab>=4.0
+ipykernel>=6.0
