@@ -9,6 +9,10 @@ matplotlib>=3.9
 # --- Unit 1: n-grams (01_ngrams/01_ngrams_tutorial.py) -----------------------
 nltk>=3.9
 
+# --- Unit 3: contextual embeddings (03_contextual_embeddings/Skip-Gram.ipynb)
+scikit-learn>=1.4   # PCA for the embedding-space scatter plot
+gensim>=4.3         # loads pretrained GloVe via api.load("glove-wiki-gigaword-100")
+
 # --- Unit 4: transformers (04_transformers/*.ipynb) --------------------------
 torch>=2.4
 

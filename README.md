@@ -60,7 +60,7 @@ Each unit is **self-contained inside its folder** — open the folder, read its 
 | `00_python_intro` | 🐍 Python & data-science basics | ✅ Done |
 | `01_ngrams` | 🔤 N-gram language models | 🟡 In progress — end-to-end tutorial script (`01_ngrams_tutorial.py`) on Austen's *Emma* via NLTK; exercises pending |
 | `02_hmm` | 🎲 Hidden Markov models | ⬜ Planned |
-| `03_contextual_embeddings` | 🧬 Contextual embeddings | ⬜ Planned |
+| `03_contextual_embeddings` | 🧬 Contextual embeddings | 🟡 In progress — Skip-Gram + GloVe notebook with the `king − man + woman ≈ queen` demo on Brown / pretrained GloVe; contextual (ELMo/BERT) section pending |
 | `04_transformers` | 🤖 Transformers from scratch | 🟡 In progress — tokenization, embeddings, single-head attention done; multi-head, positional encodings, full encoder–decoder pending |
 
 ---
