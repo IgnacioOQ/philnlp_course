@@ -16,7 +16,13 @@
       "Bash(\"/Users/ignacio/Desktop/Personal Apps/Transformer Tutorial/.venv/bin/python\" /tmp/test_glove.py)",
       "Bash(\"/Users/ignacio/Desktop/Personal Apps/Transformer Tutorial/.venv/bin/python\" /tmp/build_skipgram_notebook.py)",
       "Bash(\"/Users/ignacio/Desktop/Personal Apps/Transformer Tutorial/.venv/bin/python\" -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=900 --ExecutePreprocessor.kernel_name=python3 \"/Users/ignacio/Documents/VS Code/GitHub Repositories/philnlp_course/03_contextual_embeddings/Skip-Gram.ipynb\")",
-      "Bash(\"/Users/ignacio/Desktop/Personal Apps/Transformer Tutorial/.venv/bin/python\" -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=900 --ExecutePreprocessor.kernel_name=transformer-tutorial \"/Users/ignacio/Documents/VS Code/GitHub Repositories/philnlp_course/03_contextual_embeddings/Skip-Gram.ipynb\")"
+      "Bash(\"/Users/ignacio/Desktop/Personal Apps/Transformer Tutorial/.venv/bin/python\" -m jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=900 --ExecutePreprocessor.kernel_name=transformer-tutorial \"/Users/ignacio/Documents/VS Code/GitHub Repositories/philnlp_course/03_contextual_embeddings/Skip-Gram.ipynb\")",
+      "mcp__cp_mcp__cp_mcp_session_start",
+      "mcp__cp_mcp__cp_mcp_task_list",
+      "mcp__cp_mcp__cp_mcp_task_add",
+      "mcp__cp_mcp__cp_mcp_task_close",
+      "mcp__cp_mcp__cp_mcp_worklog_append",
+      "mcp__cp_mcp__cp_mcp_session_end"
     ]
   }
 }

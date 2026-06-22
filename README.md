@@ -17,6 +17,10 @@ The course is a guided walk through four ways of representing language, each mor
 
 Each unit reflects a different philosophical commitment about what meaning *is* (statistical regularity, hidden structure, geometric similarity, learned context). The progression is the argument.
 
+A fifth unit is a **coda**, turning from *representing* meaning to *acting* on it:
+
+5. **🔌 MCP** — the Model Context Protocol: how a language model reaches outside itself to call real tools. Where statistical "understanding" finally has to make contact with the world.
+
 ---
 
 ## 📁 Repository layout
@@ -40,6 +44,10 @@ philnlp_course/
 │   ├── 02_embeddings.ipynb
 │   ├── 03_attention.ipynb
 │   └── tokenizer.py
+├── 05_mcp/                        🔌 Model Context Protocol (tool use)
+│   ├── MCP.md                     ← topic doc
+│   ├── server.py                  ← a real FastMCP server
+│   └── client_demo.py             ← client that drives the tool-call loop
 └── setup/                         ⚙️ Google Colab boilerplate
     └── colab_setup.ipynb
 ```
@@ -50,6 +58,7 @@ Each unit is **self-contained inside its folder** — open the folder, read its 
 - [`02_hmm/HMM.md`](02_hmm/HMM.md)
 - [`03_contextual_embeddings/CONTEXTUAL_EMBEDDINGS.md`](03_contextual_embeddings/CONTEXTUAL_EMBEDDINGS.md)
 - [`04_transformers/TRANSFORMER_TUTORIAL.md`](04_transformers/TRANSFORMER_TUTORIAL.md)
+- [`05_mcp/MCP.md`](05_mcp/MCP.md)
 
 ---
 
@@ -62,6 +71,7 @@ Each unit is **self-contained inside its folder** — open the folder, read its 
 | `02_hmm` | 🎲 Hidden Markov models | ⬜ Planned |
 | `03_contextual_embeddings` | 🧬 Contextual embeddings | 🟡 In progress — Skip-Gram + GloVe notebook with the `king − man + woman ≈ queen` demo on Brown / pretrained GloVe; contextual (ELMo/BERT) section pending |
 | `04_transformers` | 🤖 Transformers from scratch | 🟡 In progress — tokenization, embeddings, single-head attention done; multi-head, positional encodings, full encoder–decoder pending |
+| `05_mcp` | 🔌 Model Context Protocol | ✅ Done — real FastMCP server (`server.py`) with three NLP tools + a stdio client (`client_demo.py`) that drives the tool-call loop end-to-end |
 
 ---
 
@@ -96,8 +106,8 @@ If you don't want to install anything locally, open the notebook of interest in 
 ## 🚦 How to use this course
 
 1. 🐍 Start in [`00_python_intro/`](00_python_intro/) if you've never written Python before.
-2. 🔤 Move through the units in order: `01_ngrams` → `02_hmm` → `03_contextual_embeddings` → `04_transformers`. Each one motivates the next.
-3. 📜 Some units are runnable `.py` scripts (e.g. [`01_ngrams/01_ngrams_tutorial.py`](01_ngrams/01_ngrams_tutorial.py)) — just `python <file>` and read the source alongside the printed output. Others are Jupyter notebooks (the transformer unit) — open them in **Jupyter** or VS Code's notebook view and run cells top-to-bottom.
+2. 🔤 Move through the units in order: `01_ngrams` → `02_hmm` → `03_contextual_embeddings` → `04_transformers` → `05_mcp`. Each one motivates the next.
+3. 📜 Some units are runnable `.py` scripts (e.g. [`01_ngrams/01_ngrams_tutorial.py`](01_ngrams/01_ngrams_tutorial.py)) — just `python <file>` and read the source alongside the printed output. Others are Jupyter notebooks (the transformer unit) — open them in **Jupyter** or VS Code's notebook view and run cells top-to-bottom. The MCP unit (`05_mcp`) runs from **its own** `.venv` — see [`05_mcp/MCP.md`](05_mcp/MCP.md) § Setup.
 4. 🔬 Don't read passively. Change the inputs, break things, see what happens.
 5. 👀 In the transformer unit especially, **actually look at the attention-weight heatmaps** when the notebook prints them. The whole point of attention is that it's visualizable.
 

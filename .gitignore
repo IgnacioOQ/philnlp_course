@@ -1,0 +1,7 @@
+# Virtual environments
+.venv/
+05_mcp/.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]

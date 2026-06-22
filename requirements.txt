@@ -16,6 +16,12 @@ gensim>=4.3         # loads pretrained GloVe via api.load("glove-wiki-gigaword-1
 # --- Unit 4: transformers (04_transformers/*.ipynb) --------------------------
 torch>=2.4
 
+# --- Unit 5: MCP (05_mcp/server.py + client_demo.py) -------------------------
+# The official Model Context Protocol Python SDK (provides FastMCP + the client).
+# NOTE: Unit 5 is normally run from its own venv (05_mcp/.venv) so the SDK
+# doesn't mix with the rest of the course — see 05_mcp/MCP.md § Setup.
+mcp>=1.0
+
 # --- Jupyter (needed to run .ipynb units) ------------------------------------
 notebook>=7.0
 jupyterlab>=4.0
